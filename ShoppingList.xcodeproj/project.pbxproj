@@ -15,6 +15,8 @@
 		D45AB43F20E02782006CB4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45AB43D20E02782006CB4F1 /* LaunchScreen.storyboard */; };
 		D45AB44920E02794006CB4F1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45AB44820E02794006CB4F1 /* CloudKit.framework */; };
 		D45AB44B20E04A6F006CB4F1 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AB44A20E04A6F006CB4F1 /* AddListViewController.swift */; };
+		D45AB44D20E187B2006CB4F1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AB44C20E187B2006CB4F1 /* ListViewController.swift */; };
+		D45AB44F20E19C89006CB4F1 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AB44E20E19C88006CB4F1 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		D45AB44620E0278F006CB4F1 /* ShoppingList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShoppingList.entitlements; sourceTree = "<group>"; };
 		D45AB44820E02794006CB4F1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		D45AB44A20E04A6F006CB4F1 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+		D45AB44C20E187B2006CB4F1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D45AB44E20E19C88006CB4F1 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				D45AB44620E0278F006CB4F1 /* ShoppingList.entitlements */,
 				D45AB43420E0277E006CB4F1 /* AppDelegate.swift */,
 				D45AB43620E0277E006CB4F1 /* ListsViewController.swift */,
+				D45AB44C20E187B2006CB4F1 /* ListViewController.swift */,
+				D45AB44E20E19C88006CB4F1 /* AddItemViewController.swift */,
 				D45AB44A20E04A6F006CB4F1 /* AddListViewController.swift */,
 				D45AB43820E0277E006CB4F1 /* Main.storyboard */,
 				D45AB43B20E02782006CB4F1 /* Assets.xcassets */,
@@ -217,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45AB44F20E19C89006CB4F1 /* AddItemViewController.swift in Sources */,
 				D45AB44B20E04A6F006CB4F1 /* AddListViewController.swift in Sources */,
 				D45AB43720E0277E006CB4F1 /* ListsViewController.swift in Sources */,
+				D45AB44D20E187B2006CB4F1 /* ListViewController.swift in Sources */,
 				D45AB43520E0277E006CB4F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

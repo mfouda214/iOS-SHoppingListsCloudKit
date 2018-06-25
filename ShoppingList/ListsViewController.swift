@@ -12,6 +12,9 @@ import SVProgressHUD
 
 class ListsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddListViewControllerDelegate {
     
+    let RecordTypeLists = "Lists"
+    let RecordTypeItems = "Items"
+    
     // MARK: Add List View Controller Delegate Methods
     func controller(controller: AddListViewController, didAddList list: CKRecord) {
         // Add List to Lists
@@ -205,6 +208,11 @@ extension ListsViewController{
         // Delete Record
         deleteRecord(list)
     }
+
+    // MARK: Table View Delegate Methods
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+    }
     
     private func deleteRecord(_ list: CKRecord) {
         // Fetch Private Database
@@ -279,21 +287,33 @@ extension ListsViewController{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        // Fetch Destination View Controller
-        let addListViewController = segue.destination as! AddListViewController
-
-        // Configure View Controller
-        addListViewController.delegate = self
-
-        if let selection = selection {
-            // Fetch List
-            let list = lists[selection]
+        
+        if segue.identifier == "List" {
+        
+            // Fetch Destination View Controller
+            let listViewController = segue.destination as! ListViewController
+            
+            // Fetch Selection
+            let list = lists[tableView.indexPathForSelectedRow!.row]
+            
+            // Configure View Controller
+            listViewController.list = list
+        
+        } else if segue.identifier == "ListDetail" {
+            // Fetch Destination View Controller
+            let addListViewController = segue.destination as! AddListViewController
 
             // Configure View Controller
-            addListViewController.list = list
+            addListViewController.delegate = self
+
+            if let selection = selection {
+                // Fetch List
+                let list = lists[selection]
+
+                // Configure View Controller
+                addListViewController.list = list
+            }
         }
     }
-    
 }
 
