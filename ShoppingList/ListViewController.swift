@@ -164,6 +164,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.textLabel?.text = "-"
         }
         
+        if let itemNumber = item.object(forKey: "number") as? Int {
+            // Configure Cell
+            cell.detailTextLabel?.text = "\(itemNumber)"
+            
+        } else {
+            cell.detailTextLabel?.text = "1"
+        }
+        
         return cell
     }
     

@@ -44,10 +44,10 @@ class AddItemViewController: UIViewController {
     }
     
     @IBAction func save(sender: AnyObject) {
-        navigationController?.popViewController(animated: true)
-        
+
         // Helpers
         let name = nameTextField.text
+        let number = Int(numberStepper.value)
         
         // Fetch Private Database
         let privateDatabase = CKContainer.default().privateCloudDatabase
@@ -64,10 +64,13 @@ class AddItemViewController: UIViewController {
         }
         
         // Configure Record
-        item?.setObject(name as CKRecordValue?, forKey: "name")
+        item?.setObject(name as! CKRecordValue, forKey: "name")
+        item?.setObject(number as CKRecordValue, forKey: "number")
         
         // Show Progress HUD
         SVProgressHUD.show()
+        
+        print(item?.recordType)
         
         // Save Record
         privateDatabase.save(item!) { (record, error) -> Void in
@@ -94,6 +97,12 @@ class AddItemViewController: UIViewController {
         // Add Observer
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(AddItemViewController.textFieldTextDidChange(notification:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nameTextField)
+    }
+    
+    private func updateNumberStepper() {
+        if let number = item?.object(forKey: "number") as? Double {
+            numberStepper.value = number
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -124,6 +133,7 @@ class AddItemViewController: UIViewController {
     // MARK: View Methods
     private func setupView() {
         updateNameTextField()
+        updateNumberStepper()
         updateSaveButton()
     }
     
