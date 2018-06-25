@@ -20,6 +20,8 @@ class AddItemViewController: UIViewController {
     let RecordTypeLists = "Lists"
     let RecordTypeItems = "Items"
     
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var numberStepper: UIStepper!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
@@ -30,6 +32,13 @@ class AddItemViewController: UIViewController {
     var item: CKRecord?
     
     // MARK: Actions
+    @IBAction func numberDidChange(sender: UIStepper) {
+        let number = Int(sender.value)
+        
+        // Update Number Label
+        numberLabel.text = "\(number)"
+    }
+    
     @IBAction func cancel(sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
     }

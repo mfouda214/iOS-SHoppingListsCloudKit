@@ -273,25 +273,49 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-5M-HXL">
-                                <rect key="frame" x="148" y="84" width="79" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-JX-6eX">
+                                <rect key="frame" x="130.5" y="84" width="114.5" height="69"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-5M-HXL">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u3F-OC-LV2">
+                                        <rect key="frame" x="0.0" y="40" width="114.5" height="29"/>
+                                        <subviews>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fBC-q2-36q">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                                <connections>
+                                                    <action selector="numberDidChangeWithSender:" destination="tUg-So-3HY" eventType="valueChanged" id="RV1-gt-4xw"/>
+                                                </connections>
+                                            </stepper>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reP-jS-bLv">
+                                                <rect key="frame" x="104" y="0.0" width="10.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xNx-JX-6eX" firstAttribute="top" secondItem="4RK-A6-XWS" secondAttribute="bottom" constant="20" id="7SS-ib-ur5"/>
                             <constraint firstItem="4RK-A6-XWS" firstAttribute="top" secondItem="Lb1-wO-IGe" secondAttribute="topMargin" id="C0J-PC-z2F"/>
+                            <constraint firstItem="xNx-JX-6eX" firstAttribute="centerX" secondItem="Lb1-wO-IGe" secondAttribute="centerX" id="Fg6-u7-juB"/>
                             <constraint firstItem="4RK-A6-XWS" firstAttribute="trailing" secondItem="tFQ-Xd-SY6" secondAttribute="trailing" id="FyR-Fb-g7p"/>
-                            <constraint firstItem="xXG-5M-HXL" firstAttribute="top" secondItem="4RK-A6-XWS" secondAttribute="bottom" constant="20" id="M8O-Rn-jhS"/>
-                            <constraint firstItem="xXG-5M-HXL" firstAttribute="centerX" secondItem="Lb1-wO-IGe" secondAttribute="centerX" id="Rcj-CK-OOY"/>
                             <constraint firstItem="4RK-A6-XWS" firstAttribute="leading" secondItem="tFQ-Xd-SY6" secondAttribute="leading" id="qaI-YX-wCV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tFQ-Xd-SY6"/>
                     </view>
                     <connections>
                         <outlet property="nameTextField" destination="xXG-5M-HXL" id="9TW-QR-ZFX"/>
+                        <outlet property="numberLabel" destination="reP-jS-bLv" id="c43-JU-Sp8"/>
+                        <outlet property="numberStepper" destination="fBC-q2-36q" id="upl-QE-Hzl"/>
                         <outlet property="saveButton" destination="xfn-fA-7Dh" id="J1J-hd-0nH"/>
                     </connections>
                 </viewController>
