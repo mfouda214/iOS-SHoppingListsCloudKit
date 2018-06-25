@@ -12,7 +12,6 @@ import SVProgressHUD
 
 class ListsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddListViewControllerDelegate {
     
-    // MARK: -
     // MARK: Add List View Controller Delegate Methods
     func controller(controller: AddListViewController, didAddList list: CKRecord) {
         // Add List to Lists
