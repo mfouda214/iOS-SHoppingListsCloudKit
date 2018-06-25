@@ -7,13 +7,88 @@
 //
 
 import UIKit
+import CloudKit
+import SVProgressHUD
+
+protocol AddItemViewControllerDelegate {
+    func controller(controller: AddItemViewController, didAddItem item: CKRecord)
+    func controller(controller: AddItemViewController, didUpdateItem item: CKRecord)
+}
 
 class AddItemViewController: UIViewController {
-
+    
+    let RecordTypeLists = "Lists"
+    let RecordTypeItems = "Items"
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    var delegate: AddItemViewControllerDelegate?
+    var newItem: Bool = true
+    
+    var list: CKRecord!
+    var item: CKRecord?
+    
+    // MARK: Actions
+    @IBAction func cancel(sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func save(sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
+        
+        // Helpers
+        let name = nameTextField.text
+        
+        // Fetch Private Database
+        let privateDatabase = CKContainer.default().privateCloudDatabase
+        
+        if item == nil {
+            // Create Record
+            item = CKRecord(recordType: RecordTypeItems)
+            
+            // Initialize Reference
+            let listReference = CKReference(recordID: list.recordID, action: .deleteSelf)
+            
+            // Configure Record
+            item?.setObject(listReference, forKey: "list")
+        }
+        
+        // Configure Record
+        item?.setObject(name as CKRecordValue?, forKey: "name")
+        
+        // Show Progress HUD
+        SVProgressHUD.show()
+        
+        // Save Record
+        privateDatabase.save(item!) { (record, error) -> Void in
+            DispatchQueue.main.sync { () -> Void in
+                // Dismiss Progress HUD
+                SVProgressHUD.dismiss()
+                
+                // Process Response
+                self.processResponse(record: record, error: error as? NSError)
+            }
+        }
+    }
+    
+    
+    // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupView()
+        
+        // Update Helper
+        newItem = item == nil
+        
+        // Add Observer
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(AddItemViewController.textFieldTextDidChange(notification:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nameTextField)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        nameTextField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +96,12 @@ class AddItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // MARK: Notification Handling
+    @objc func textFieldTextDidChange(notification: NSNotification) {
+        updateSaveButton()
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -31,5 +111,63 @@ class AddItemViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: View Methods
+    private func setupView() {
+        updateNameTextField()
+        updateSaveButton()
+    }
+    
+    // MARK: -
+    private func updateNameTextField() {
+        if let name = item?.object(forKey: "name") as? String {
+            nameTextField.text = name
+        }
+    }
+    
+    // MARK: -
+    private func updateSaveButton() {
+        let text = nameTextField.text
+        
+        if let name = text {
+            saveButton.isEnabled = !name.isEmpty
+        } else {
+            saveButton.isEnabled = false
+        }
+    }
+    
+    // MARK: Helper Methods
+    private func processResponse(record: CKRecord?, error: NSError?) {
+        var message = ""
+        
+        if let error = error {
+            print(error)
+            message = "We were not able to save your item."
+            
+        } else if record == nil {
+            message = "We were not able to save your item."
+        }
+        
+        if !message.isEmpty {
+            // Initialize Alert Controller
+            let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            
+            // Present Alert Controller
+            present(alertController, animated: true, completion: nil)
+            
+        } else {
+            // Notify Delegate
+            if newItem {
+                delegate?.controller(controller: self, didAddItem: item!)
+            } else {
+                delegate?.controller(controller:  self, didUpdateItem: item!)
+            }
+            
+            // Pop View Controller
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+    }
+
 
 }
