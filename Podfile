@@ -7,5 +7,7 @@ target 'ShoppingList' do
 
   # Pods for ShoppingList
   pod 'SVProgressHUD', '~> 1.1'
+  pod 'Flurry-iOS-SDK/FlurrySDK'
+  pod 'Flurry-iOS-SDK/FlurryAds'
 
 end

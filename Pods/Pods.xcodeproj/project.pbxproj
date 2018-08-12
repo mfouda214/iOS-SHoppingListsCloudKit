@@ -7,132 +7,298 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001DB681F1A1DB538C05013E51406B18 /* Pods-ShoppingList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A67F12C2B8DFFA9BCD4B36B0ADCD7007 /* Pods-ShoppingList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A17DB1CBDAE8CF52FF52AAF4DF3A616 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E705C113EFE3BE631AFE26BB982A106 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B9220C96301F16182907D9D693E244A /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2F1D7E5C1DB3984E40A4A87DA0C64C9 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B18FF1B825BEBE9EA7B9EC55B06050C /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 581058A2BDFC3E152E25568CB63D1AA4 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BC18428D9DBEBDC3BACA201113050F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
-		6ACFF64428A5E2D93B0B54E4AF44A89E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF13BCB9D36F1319E01CAB18FE2FBA7 /* QuartzCore.framework */; };
-		93D55BF509D2B2193137D4564CB3AB34 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DD9D38E41C18B2F64F3CFA87C91B6 /* SVIndefiniteAnimatedView.m */; };
-		9609F5188A5894BCE96FA534A90AF6E6 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E008272F9F01C7C9FF1BD623EF1BD84C /* SVProgressHUD-dummy.m */; };
-		A7B3525B0C9C248B9FC321AD9FF35955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9310556BBE996AE628441592FB1181 /* Foundation.framework */; };
-		BA400E32D429332830A9B666A39C6CAF /* Pods-ShoppingList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 477A2806B1CF3B815234D14EBD0BFFCD /* Pods-ShoppingList-dummy.m */; };
-		F2B46D99F8DAD57563F5F3313BCF760A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEFCC4D3DAD9AE7D0DAFDE70AD64D /* SVProgressHUD.bundle */; };
-		F92174F8776782172742FCA4C99B9E17 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6342EF42A636CDEB45DD4CCB631C3691 /* SVProgressHUD.m */; };
+		09422FCC363D7B89535E33E4BAF91703 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D6A87A709A42F02EF1D6AC5AC6AEBE /* CoreGraphics.framework */; };
+		13319D7DCB20C7693CA1DE76B3A34075 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C651A23361DC2741BFA10C06532A95 /* SystemConfiguration.framework */; };
+		1426463DEE1DCBF4457D7AFF10AAEF1B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC87660E42E876E5AB461CE151E93F0 /* MediaPlayer.framework */; };
+		17EB24EE12E8323ED6F75AEBFDF2B019 /* FlurryAdTargeting.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F3550C4474F74BE01B302457DE4D6C /* FlurryAdTargeting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C22220EEBA5D48898CDD65BD054404A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B05E7CADAEC4A9F21120DE959570B48 /* UIKit.framework */; };
+		1FDCDBFB0DEB336CA82D652EDB1AA676 /* Pods-ShoppingList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A67F12C2B8DFFA9BCD4B36B0ADCD7007 /* Pods-ShoppingList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20960F90FC40BE7ED7F4F3A37A96E9A0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE698953ADC9B3F8DCE9E5A29C496 /* SVProgressHUD.m */; };
+		22D01E0457C5B6558BBD6FD168FABCFD /* FlurryAdBannerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E38204D0AD5BFFD9378F06A83F417B /* FlurryAdBannerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23F7F998F52FE0FBB4E1281E02AF225B /* FlurryAdInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B32747016E9DD9A9BD696B1692D5B4 /* FlurryAdInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24BE27D1D247713E9BCD4709E650D7A4 /* FlurryEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = E33DA3FF5E084D046AF84F17266165D0 /* FlurryEmpty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3598AF4CD825BEAB3CB0ACD97166248E /* Pods-ShoppingList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 477A2806B1CF3B815234D14EBD0BFFCD /* Pods-ShoppingList-dummy.m */; };
+		3DB2E0CE20A8F7116C0483381568923F /* FlurryAdNativeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 55033D8AC2B8A4E8308358811719306D /* FlurryAdNativeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4224DD265304358CF3CD8CEE5C94C2E2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BA247D477C7D08089355C6FB8162EF /* WebKit.framework */; };
+		4D17427871B13016280F00FD47384A70 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 55212F6517A4104A09D3C3523B7078E8 /* SVProgressHUD.bundle */; };
+		5227649CA26AC8122F5C03831578F95A /* FlurryAdNativeAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D86CABBF1059445CDE8F665D4CBFFE3 /* FlurryAdNativeAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EE764105EF9D8F3DD2DC914AD5EAE48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC6C2F46E1D4936BDDA1FE2DC56B484 /* QuartzCore.framework */; };
+		819C375A9F8B62559A279D11102AE044 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CB09C83AA5B0CC04E8FAE744EF146A /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CB13EC389DD7417BD448AADFA7848F0 /* Flurry-iOS-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9DCEC2102B040B811B0195F0B6AFDFE /* Flurry-iOS-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FFC82DB0BE58EFD7BA74F87593A3C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917BDA48DA3AF24F4F4A5118F179EBF3 /* Foundation.framework */; };
+		90E99127ABD1CF9584B62212550AD73A /* FlurryAdNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EF72835CEAD09C638F35D2ECD3E946 /* FlurryAdNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938877243C6E131B716BB6BD75A9202C /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD7DF5C503B2A6796233CC58E77D5ED /* SVProgressHUD-dummy.m */; };
+		A032493A39E4FCC1BE632C0C43106774 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3C37CE387E3052F170B28C7278C06F /* Security.framework */; };
+		A03D704119995F040F237425A9740C5B /* FlurryConsent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB30B957672BC06CEF2481F387BF08C /* FlurryConsent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0E263112592E11E5D6564091FE1EC7B /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F10BC876EA941383209EF759D86AC964 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16EC3A50C8C7551D4097CF07D804E36 /* FlurryAdNativeStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 185796585F68EF61D30F115E3215B4B2 /* FlurryAdNativeStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A986CEBCDBF7D28E1AE00083F7FFB0E0 /* FlurryAdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B487564308D1FC21F43C9A343F3BD09 /* FlurryAdDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA70887AC6C132843C543EFEF041413F /* FlurryAdError.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B4CFE4788AA29CAD293E51C65F7B6D /* FlurryAdError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC93A7A7EA61017EAF538079DFF942F2 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 023E77BA4E5C926C8056F1EE21DB9362 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC4327DF943B8BE271F9D6340AA5A57A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7119FF991C7F646ED02725E52FD56FB6 /* AVFoundation.framework */; };
+		C2B08074D8E0811E0960A007786DEE22 /* Flurry.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A50D9B27DF56E4A05EE31B305AA3B0 /* Flurry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5E08D29B28FFD8D6F1A247972968903 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCA3570866C1F5411536600E65FE9C1 /* CoreTelephony.framework */; };
+		C94DCC78E3A59B22135979C2ECB4AF7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917BDA48DA3AF24F4F4A5118F179EBF3 /* Foundation.framework */; };
+		D18110C37F6C4B2D444B5B46D38D2F55 /* FlurryAdInterstitialDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D8026EFD68BEB6CC4BB86A26A049E06E /* FlurryAdInterstitialDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7E34722FBD73FE7E49849A6DF822A47 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B27D6B816D46CA332C726A9C2F2F0F7 /* CoreMedia.framework */; };
+		EBA0C3D3A8E2FC89D4A0CD46E28FB20A /* FlurryAdsEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E07DA8821B2A8F6F4011809936F470A /* FlurryAdsEmpty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EFFC97DB0F9B114A1A017C87B14C21A7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EF755663644E9BF9031977F4178B3E /* SVIndefiniteAnimatedView.m */; };
+		F2626E62836B28935D95C2DE01D09B35 /* Flurry-iOS-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0724AAB85AE2AF831DEE7FC32FA37 /* Flurry-iOS-SDK-dummy.m */; };
+		FA7BAC580CE148F6D7F961224FC02BB9 /* FlurryAdBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E08985F8E36DAC2E44F32CAB30AE3E /* FlurryAdBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD8FD27560A6F2DFD848E138FD186E29 /* FlurrySessionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4326AC929F8846BDE209F9F12EFC43BA /* FlurrySessionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF7E28AD174C47B090109B8C1F71434C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917BDA48DA3AF24F4F4A5118F179EBF3 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3E612EAD3F3D3F6257B34FF2CF13B43F /* PBXContainerItemProxy */ = {
+		2854F4B19A77150869AA6B8960CE6A1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 16EC19BC1FA15E1A5BC4EE3404E283AF;
+			remoteGlobalIDString = 961DE7189B68AFE7A59D4ADA2A709444;
+			remoteInfo = "Flurry-iOS-SDK";
+		};
+		540E1CB9F78D2C8032C3A32C9031F919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00FC0861B1BD8207050F1587724638CA;
 			remoteInfo = SVProgressHUD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023E77BA4E5C926C8056F1EE21DB9362 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		06BFE7A0376FDE0720E0CB8F975E2317 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		0761D7B75D37E747E379ABBB27C3D74A /* Pods-ShoppingList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShoppingList.modulemap"; sourceTree = "<group>"; };
 		076AA957CF5A61F9399DA45B1CB1776F /* Pods-ShoppingList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingList.release.xcconfig"; sourceTree = "<group>"; };
-		0F9310556BBE996AE628441592FB1181 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2043D96022EA1D3BF8BAA8AB8C9B15C5 /* Pods_ShoppingList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShoppingList.framework; path = "Pods-ShoppingList.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		294F05B52BB91238C520F808F2E93455 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		3E705C113EFE3BE631AFE26BB982A106 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		07EF72835CEAD09C638F35D2ECD3E946 /* FlurryAdNative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdNative.h; path = FlurryAds/FlurryAdNative/FlurryAdNative.h; sourceTree = "<group>"; };
+		0F2B40E8F474A6E3ABE31D7E564CD1CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCA3570866C1F5411536600E65FE9C1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		1059A1769EBF30D403B464702AFEFD17 /* Flurry-iOS-SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Flurry-iOS-SDK.xcconfig"; sourceTree = "<group>"; };
+		16CB09C83AA5B0CC04E8FAE744EF146A /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		185796585F68EF61D30F115E3215B4B2 /* FlurryAdNativeStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdNativeStyle.h; path = FlurryAds/FlurryAdNative/FlurryAdNativeStyle.h; sourceTree = "<group>"; };
+		2AF3987B6D30B33268CF03DF838B0B7E /* Pods_ShoppingList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShoppingList.framework; path = "Pods-ShoppingList.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B48CEAD3B3B32906BA001DAEDEFAC47 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		2BB30B957672BC06CEF2481F387BF08C /* FlurryConsent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryConsent.h; path = Flurry/FlurryConsent.h; sourceTree = "<group>"; };
+		3B05E7CADAEC4A9F21120DE959570B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4326AC929F8846BDE209F9F12EFC43BA /* FlurrySessionBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurrySessionBuilder.h; path = Flurry/FlurrySessionBuilder.h; sourceTree = "<group>"; };
 		477A2806B1CF3B815234D14EBD0BFFCD /* Pods-ShoppingList-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShoppingList-dummy.m"; sourceTree = "<group>"; };
-		579DD9D38E41C18B2F64F3CFA87C91B6 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		581058A2BDFC3E152E25568CB63D1AA4 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		6342EF42A636CDEB45DD4CCB631C3691 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		47B4CFE4788AA29CAD293E51C65F7B6D /* FlurryAdError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdError.h; path = FlurryAds/Shared/FlurryAdError.h; sourceTree = "<group>"; };
+		53A50D9B27DF56E4A05EE31B305AA3B0 /* Flurry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
+		55033D8AC2B8A4E8308358811719306D /* FlurryAdNativeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdNativeDelegate.h; path = FlurryAds/FlurryAdNative/FlurryAdNativeDelegate.h; sourceTree = "<group>"; };
+		55212F6517A4104A09D3C3523B7078E8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		6180720B72D31958F224E3186F1A5660 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		65A1949658E3B111415E7DCF24A1099C /* Pods-ShoppingList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShoppingList.debug.xcconfig"; sourceTree = "<group>"; };
-		86A087ED5D0F85E2A404050DC37D6459 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		6E07DA8821B2A8F6F4011809936F470A /* FlurryAdsEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FlurryAdsEmpty.m; path = FlurryAds/FlurryAdsEmpty.m; sourceTree = "<group>"; };
+		7119FF991C7F646ED02725E52FD56FB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		77EFF58A73182B80F443CEE9C366BD86 /* Flurry_iOS_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Flurry_iOS_SDK.framework; path = "Flurry-iOS-SDK.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B32747016E9DD9A9BD696B1692D5B4 /* FlurryAdInterstitial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdInterstitial.h; path = FlurryAds/FlurryAdInterstitial/FlurryAdInterstitial.h; sourceTree = "<group>"; };
+		78BA247D477C7D08089355C6FB8162EF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		7D3C37CE387E3052F170B28C7278C06F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		87E08985F8E36DAC2E44F32CAB30AE3E /* FlurryAdBanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdBanner.h; path = FlurryAds/FlurryAdBanner/FlurryAdBanner.h; sourceTree = "<group>"; };
+		8B487564308D1FC21F43C9A343F3BD09 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdDelegate.h; path = FlurryAds/StaticAPI/FlurryAdDelegate.h; sourceTree = "<group>"; };
+		8D86CABBF1059445CDE8F665D4CBFFE3 /* FlurryAdNativeAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdNativeAsset.h; path = FlurryAds/FlurryAdNative/FlurryAdNativeAsset.h; sourceTree = "<group>"; };
+		8DC87660E42E876E5AB461CE151E93F0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		917BDA48DA3AF24F4F4A5118F179EBF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C651A23361DC2741BFA10C06532A95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		94D90462834145ABB3EA07EF762BD6FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CF13BCB9D36F1319E01CAB18FE2FBA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9B27D6B816D46CA332C726A9C2F2F0F7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		A4FC77D4BBC4D9EC7731190146B2A241 /* Pods-ShoppingList-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingList-resources.sh"; sourceTree = "<group>"; };
 		A67F12C2B8DFFA9BCD4B36B0ADCD7007 /* Pods-ShoppingList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShoppingList-umbrella.h"; sourceTree = "<group>"; };
-		B7DCEFCC4D3DAD9AE7D0DAFDE70AD64D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		A94D1719A083B2E5D5D72A4B72F89644 /* Flurry-iOS-SDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Flurry-iOS-SDK.modulemap"; sourceTree = "<group>"; };
+		AB2EE698953ADC9B3F8DCE9E5A29C496 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		B8A64537E5EB63AA23C594ED0929023A /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B915D9762876D881322AF7002CD337F2 /* Flurry-iOS-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Flurry-iOS-SDK-prefix.pch"; sourceTree = "<group>"; };
+		B9DCEC2102B040B811B0195F0B6AFDFE /* Flurry-iOS-SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Flurry-iOS-SDK-umbrella.h"; sourceTree = "<group>"; };
 		BB4D6FC2166A16DAA14B2FE1AC67DE7F /* Pods-ShoppingList-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShoppingList-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BD8956A9BAE8814D87C79BCE47B81703 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3E8FBB0B02FDB12703F1B6F7C906E49 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81F3F87DF408AA1A66394016C6975FF /* Pods-ShoppingList-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShoppingList-acknowledgements.plist"; sourceTree = "<group>"; };
-		DB0609362E906F4443FF0178BB1B5E68 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		E008272F9F01C7C9FF1BD623EF1BD84C /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		E2F1D7E5C1DB3984E40A4A87DA0C64C9 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		CCEA2EC2DB093D2FFC70A41FC90D0171 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD0724AAB85AE2AF831DEE7FC32FA37 /* Flurry-iOS-SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Flurry-iOS-SDK-dummy.m"; sourceTree = "<group>"; };
+		D0321B9C1C402E655100C59B6D4D6CBE /* libFlurry_8.6.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_8.6.1.a; path = Flurry/libFlurry_8.6.1.a; sourceTree = "<group>"; };
+		D5EF755663644E9BF9031977F4178B3E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		D5F3550C4474F74BE01B302457DE4D6C /* FlurryAdTargeting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdTargeting.h; path = FlurryAds/Shared/FlurryAdTargeting.h; sourceTree = "<group>"; };
+		D8026EFD68BEB6CC4BB86A26A049E06E /* FlurryAdInterstitialDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdInterstitialDelegate.h; path = FlurryAds/FlurryAdInterstitial/FlurryAdInterstitialDelegate.h; sourceTree = "<group>"; };
+		DBD3E84FA3F0C9962A2244ED9200A211 /* libFlurryAds_8.6.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurryAds_8.6.1.a; path = FlurryAds/libFlurryAds_8.6.1.a; sourceTree = "<group>"; };
+		DCC6C2F46E1D4936BDDA1FE2DC56B484 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E33DA3FF5E084D046AF84F17266165D0 /* FlurryEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FlurryEmpty.m; path = Flurry/FlurryEmpty.m; sourceTree = "<group>"; };
+		EDD7DF5C503B2A6796233CC58E77D5ED /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		F10BC876EA941383209EF759D86AC964 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		F1D6A87A709A42F02EF1D6AC5AC6AEBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F9E38204D0AD5BFFD9378F06A83F417B /* FlurryAdBannerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryAdBannerDelegate.h; path = FlurryAds/FlurryAdBanner/FlurryAdBannerDelegate.h; sourceTree = "<group>"; };
 		FA72700A3E74E627DFBAF7B424A47690 /* Pods-ShoppingList-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShoppingList-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7D11111DC1B8E8D07198C34E98AFC358 /* Frameworks */ = {
+		3E1E9F94760257B148FA15A9593231A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7B3525B0C9C248B9FC321AD9FF35955 /* Foundation.framework in Frameworks */,
+				BC4327DF943B8BE271F9D6340AA5A57A /* AVFoundation.framework in Frameworks */,
+				09422FCC363D7B89535E33E4BAF91703 /* CoreGraphics.framework in Frameworks */,
+				D7E34722FBD73FE7E49849A6DF822A47 /* CoreMedia.framework in Frameworks */,
+				C5E08D29B28FFD8D6F1A247972968903 /* CoreTelephony.framework in Frameworks */,
+				FF7E28AD174C47B090109B8C1F71434C /* Foundation.framework in Frameworks */,
+				1426463DEE1DCBF4457D7AFF10AAEF1B /* MediaPlayer.framework in Frameworks */,
+				A032493A39E4FCC1BE632C0C43106774 /* Security.framework in Frameworks */,
+				13319D7DCB20C7693CA1DE76B3A34075 /* SystemConfiguration.framework in Frameworks */,
+				1C22220EEBA5D48898CDD65BD054404A /* UIKit.framework in Frameworks */,
+				4224DD265304358CF3CD8CEE5C94C2E2 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0939CFC4E24F71140E387010728F256 /* Frameworks */ = {
+		CDA08843A5F260ACEC4C86F1E651F040 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC18428D9DBEBDC3BACA201113050F4 /* Foundation.framework in Frameworks */,
-				6ACFF64428A5E2D93B0B54E4AF44A89E /* QuartzCore.framework in Frameworks */,
+				8FFC82DB0BE58EFD7BA74F87593A3C38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB499AC4A15EDF8BDBECB5B7900977A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94DCC78E3A59B22135979C2ECB4AF7E /* Foundation.framework in Frameworks */,
+				7EE764105EF9D8F3DD2DC914AD5EAE48 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05F2D60C3C3D5EB7CF2459EE12145B0E /* SVProgressHUD */ = {
+		00083A3C3F5EF692EA11B90E8F684FEB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				581058A2BDFC3E152E25568CB63D1AA4 /* SVIndefiniteAnimatedView.h */,
-				579DD9D38E41C18B2F64F3CFA87C91B6 /* SVIndefiniteAnimatedView.m */,
-				3E705C113EFE3BE631AFE26BB982A106 /* SVProgressHUD.h */,
-				6342EF42A636CDEB45DD4CCB631C3691 /* SVProgressHUD.m */,
-				AB3D1D96E128481709885CAC7DB4D229 /* Resources */,
-				3001520268DA2137619BB7F1B239F6EC /* Support Files */,
+				55212F6517A4104A09D3C3523B7078E8 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1EED112E78CE06CDDDF3E0B511194E3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3E84FA3F0C9962A2244ED9200A211 /* libFlurryAds_8.6.1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ECE3791ED882C7D31E04A241C6B24E0 /* FlurryAds */ = {
+			isa = PBXGroup;
+			children = (
+				87E08985F8E36DAC2E44F32CAB30AE3E /* FlurryAdBanner.h */,
+				F9E38204D0AD5BFFD9378F06A83F417B /* FlurryAdBannerDelegate.h */,
+				8B487564308D1FC21F43C9A343F3BD09 /* FlurryAdDelegate.h */,
+				47B4CFE4788AA29CAD293E51C65F7B6D /* FlurryAdError.h */,
+				78B32747016E9DD9A9BD696B1692D5B4 /* FlurryAdInterstitial.h */,
+				D8026EFD68BEB6CC4BB86A26A049E06E /* FlurryAdInterstitialDelegate.h */,
+				07EF72835CEAD09C638F35D2ECD3E946 /* FlurryAdNative.h */,
+				8D86CABBF1059445CDE8F665D4CBFFE3 /* FlurryAdNativeAsset.h */,
+				55033D8AC2B8A4E8308358811719306D /* FlurryAdNativeDelegate.h */,
+				185796585F68EF61D30F115E3215B4B2 /* FlurryAdNativeStyle.h */,
+				6E07DA8821B2A8F6F4011809936F470A /* FlurryAdsEmpty.m */,
+				D5F3550C4474F74BE01B302457DE4D6C /* FlurryAdTargeting.h */,
+				1EED112E78CE06CDDDF3E0B511194E3B /* Frameworks */,
+			);
+			name = FlurryAds;
+			sourceTree = "<group>";
+		};
+		32FAB26065A8BBA28D5AE6EF537AF75B /* Flurry-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE3791ED882C7D31E04A241C6B24E0 /* FlurryAds */,
+				91B5D47A47CFA76DDB1EFE16861DCB8B /* FlurrySDK */,
+				42AA43278DB83CF41D68EDFA181D74D6 /* Support Files */,
+			);
+			name = "Flurry-iOS-SDK";
+			path = "Flurry-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		3396A9DE23E767EA40D513D08E88A11D /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				16CB09C83AA5B0CC04E8FAE744EF146A /* SVIndefiniteAnimatedView.h */,
+				D5EF755663644E9BF9031977F4178B3E /* SVIndefiniteAnimatedView.m */,
+				023E77BA4E5C926C8056F1EE21DB9362 /* SVProgressHUD.h */,
+				AB2EE698953ADC9B3F8DCE9E5A29C496 /* SVProgressHUD.m */,
+				00083A3C3F5EF692EA11B90E8F684FEB /* Resources */,
+				3C3FBF0E4EF2BAD47DB55701B4E12119 /* Support Files */,
 			);
 			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		3001520268DA2137619BB7F1B239F6EC /* Support Files */ = {
+		3BCF7BAE5F96FABB6827D35E1DE40F81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD8956A9BAE8814D87C79BCE47B81703 /* Info.plist */,
-				294F05B52BB91238C520F808F2E93455 /* SVProgressHUD.modulemap */,
-				86A087ED5D0F85E2A404050DC37D6459 /* SVProgressHUD.xcconfig */,
-				E008272F9F01C7C9FF1BD623EF1BD84C /* SVProgressHUD-dummy.m */,
-				DB0609362E906F4443FF0178BB1B5E68 /* SVProgressHUD-prefix.pch */,
-				E2F1D7E5C1DB3984E40A4A87DA0C64C9 /* SVProgressHUD-umbrella.h */,
+				D0321B9C1C402E655100C59B6D4D6CBE /* libFlurry_8.6.1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C3FBF0E4EF2BAD47DB55701B4E12119 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F2B40E8F474A6E3ABE31D7E564CD1CE /* Info.plist */,
+				06BFE7A0376FDE0720E0CB8F975E2317 /* SVProgressHUD.modulemap */,
+				6180720B72D31958F224E3186F1A5660 /* SVProgressHUD.xcconfig */,
+				EDD7DF5C503B2A6796233CC58E77D5ED /* SVProgressHUD-dummy.m */,
+				2B48CEAD3B3B32906BA001DAEDEFAC47 /* SVProgressHUD-prefix.pch */,
+				F10BC876EA941383209EF759D86AC964 /* SVProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		3EE3059F30F453D22BEBE46C8E0CDA58 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				56933BB70C933E0BF63210DD87D76AD0 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		56933BB70C933E0BF63210DD87D76AD0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0F9310556BBE996AE628441592FB1181 /* Foundation.framework */,
-				9CF13BCB9D36F1319E01CAB18FE2FBA7 /* QuartzCore.framework */,
+				7119FF991C7F646ED02725E52FD56FB6 /* AVFoundation.framework */,
+				F1D6A87A709A42F02EF1D6AC5AC6AEBE /* CoreGraphics.framework */,
+				9B27D6B816D46CA332C726A9C2F2F0F7 /* CoreMedia.framework */,
+				0FCA3570866C1F5411536600E65FE9C1 /* CoreTelephony.framework */,
+				917BDA48DA3AF24F4F4A5118F179EBF3 /* Foundation.framework */,
+				8DC87660E42E876E5AB461CE151E93F0 /* MediaPlayer.framework */,
+				DCC6C2F46E1D4936BDDA1FE2DC56B484 /* QuartzCore.framework */,
+				7D3C37CE387E3052F170B28C7278C06F /* Security.framework */,
+				93C651A23361DC2741BFA10C06532A95 /* SystemConfiguration.framework */,
+				3B05E7CADAEC4A9F21120DE959570B48 /* UIKit.framework */,
+				78BA247D477C7D08089355C6FB8162EF /* WebKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		42AA43278DB83CF41D68EDFA181D74D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94D1719A083B2E5D5D72A4B72F89644 /* Flurry-iOS-SDK.modulemap */,
+				1059A1769EBF30D403B464702AFEFD17 /* Flurry-iOS-SDK.xcconfig */,
+				CDD0724AAB85AE2AF831DEE7FC32FA37 /* Flurry-iOS-SDK-dummy.m */,
+				B915D9762876D881322AF7002CD337F2 /* Flurry-iOS-SDK-prefix.pch */,
+				B9DCEC2102B040B811B0195F0B6AFDFE /* Flurry-iOS-SDK-umbrella.h */,
+				CCEA2EC2DB093D2FFC70A41FC90D0171 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Flurry-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		6D89B8CDC1FAEC5256239249803FFF66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77EFF58A73182B80F443CEE9C366BD86 /* Flurry_iOS_SDK.framework */,
+				2AF3987B6D30B33268CF03DF838B0B7E /* Pods_ShoppingList.framework */,
+				B8A64537E5EB63AA23C594ED0929023A /* SVProgressHUD.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				E19BB65A0199ECFF4E4340E5D6E62384 /* Pods */,
-				96BC27019481D9A323BA2972304128BB /* Products */,
+				EB57DDB3388FBC701046A1E93218737F /* Frameworks */,
+				93A8572538C083B3F86764E18A5E0BE7 /* Pods */,
+				6D89B8CDC1FAEC5256239249803FFF66 /* Products */,
 				83041F66FBCBFF0B2C99D9B899B275F4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -145,13 +311,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		96BC27019481D9A323BA2972304128BB /* Products */ = {
+		91B5D47A47CFA76DDB1EFE16861DCB8B /* FlurrySDK */ = {
 			isa = PBXGroup;
 			children = (
-				2043D96022EA1D3BF8BAA8AB8C9B15C5 /* Pods_ShoppingList.framework */,
-				C3E8FBB0B02FDB12703F1B6F7C906E49 /* SVProgressHUD.framework */,
+				53A50D9B27DF56E4A05EE31B305AA3B0 /* Flurry.h */,
+				2BB30B957672BC06CEF2481F387BF08C /* FlurryConsent.h */,
+				E33DA3FF5E084D046AF84F17266165D0 /* FlurryEmpty.m */,
+				4326AC929F8846BDE209F9F12EFC43BA /* FlurrySessionBuilder.h */,
+				3BCF7BAE5F96FABB6827D35E1DE40F81 /* Frameworks */,
 			);
-			name = Products;
+			name = FlurrySDK;
+			sourceTree = "<group>";
+		};
+		93A8572538C083B3F86764E18A5E0BE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32FAB26065A8BBA28D5AE6EF537AF75B /* Flurry-iOS-SDK */,
+				3396A9DE23E767EA40D513D08E88A11D /* SVProgressHUD */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9D73F1387BEE0BC291693FC3F90BE422 /* Pods-ShoppingList */ = {
@@ -172,54 +350,68 @@
 			path = "Target Support Files/Pods-ShoppingList";
 			sourceTree = "<group>";
 		};
-		AB3D1D96E128481709885CAC7DB4D229 /* Resources */ = {
+		EB57DDB3388FBC701046A1E93218737F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7DCEFCC4D3DAD9AE7D0DAFDE70AD64D /* SVProgressHUD.bundle */,
+				3EE3059F30F453D22BEBE46C8E0CDA58 /* iOS */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		E19BB65A0199ECFF4E4340E5D6E62384 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				05F2D60C3C3D5EB7CF2459EE12145B0E /* SVProgressHUD */,
-			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		474D562EE866450E328EBCA141D26AEE /* Headers */ = {
+		0F60ED3035777933E6157EF4756A8B70 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B18FF1B825BEBE9EA7B9EC55B06050C /* SVIndefiniteAnimatedView.h in Headers */,
-				1B9220C96301F16182907D9D693E244A /* SVProgressHUD-umbrella.h in Headers */,
-				1A17DB1CBDAE8CF52FF52AAF4DF3A616 /* SVProgressHUD.h in Headers */,
+				819C375A9F8B62559A279D11102AE044 /* SVIndefiniteAnimatedView.h in Headers */,
+				A0E263112592E11E5D6564091FE1EC7B /* SVProgressHUD-umbrella.h in Headers */,
+				AC93A7A7EA61017EAF538079DFF942F2 /* SVProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70097EF58C9B1CF13B17B1F0DD9DCF07 /* Headers */ = {
+		5D616E9F2C068732371812D86AE67A8D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001DB681F1A1DB538C05013E51406B18 /* Pods-ShoppingList-umbrella.h in Headers */,
+				1FDCDBFB0DEB336CA82D652EDB1AA676 /* Pods-ShoppingList-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D30CE3B3ADE3942FEB292C2385E89A5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB13EC389DD7417BD448AADFA7848F0 /* Flurry-iOS-SDK-umbrella.h in Headers */,
+				C2B08074D8E0811E0960A007786DEE22 /* Flurry.h in Headers */,
+				FA7BAC580CE148F6D7F961224FC02BB9 /* FlurryAdBanner.h in Headers */,
+				22D01E0457C5B6558BBD6FD168FABCFD /* FlurryAdBannerDelegate.h in Headers */,
+				A986CEBCDBF7D28E1AE00083F7FFB0E0 /* FlurryAdDelegate.h in Headers */,
+				AA70887AC6C132843C543EFEF041413F /* FlurryAdError.h in Headers */,
+				23F7F998F52FE0FBB4E1281E02AF225B /* FlurryAdInterstitial.h in Headers */,
+				D18110C37F6C4B2D444B5B46D38D2F55 /* FlurryAdInterstitialDelegate.h in Headers */,
+				90E99127ABD1CF9584B62212550AD73A /* FlurryAdNative.h in Headers */,
+				5227649CA26AC8122F5C03831578F95A /* FlurryAdNativeAsset.h in Headers */,
+				3DB2E0CE20A8F7116C0483381568923F /* FlurryAdNativeDelegate.h in Headers */,
+				A16EC3A50C8C7551D4097CF07D804E36 /* FlurryAdNativeStyle.h in Headers */,
+				17EB24EE12E8323ED6F75AEBFDF2B019 /* FlurryAdTargeting.h in Headers */,
+				A03D704119995F040F237425A9740C5B /* FlurryConsent.h in Headers */,
+				FD8FD27560A6F2DFD848E138FD186E29 /* FlurrySessionBuilder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		16EC19BC1FA15E1A5BC4EE3404E283AF /* SVProgressHUD */ = {
+		00FC0861B1BD8207050F1587724638CA /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90C292D09CC351263C99C101EB799246 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 9B82031689E707DD3790617E7C1C35CE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				9F06E1650400558C54315B747FD91E3B /* Sources */,
-				D0939CFC4E24F71140E387010728F256 /* Frameworks */,
-				474D562EE866450E328EBCA141D26AEE /* Headers */,
-				97E9513B958D9D9E0F4A086A9BEFC49F /* Resources */,
+				EBF60ABDD7CEA0EC096214C9609DE060 /* Sources */,
+				FB499AC4A15EDF8BDBECB5B7900977A9 /* Frameworks */,
+				0F60ED3035777933E6157EF4756A8B70 /* Headers */,
+				0AC9A847161D42C20DA7B3E013092421 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -227,25 +419,43 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = C3E8FBB0B02FDB12703F1B6F7C906E49 /* SVProgressHUD.framework */;
+			productReference = B8A64537E5EB63AA23C594ED0929023A /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A96B0822D16BD5860B52BB3386C271A8 /* Pods-ShoppingList */ = {
+		3A6409CA8B5546953EAAC5C1621105B4 /* Pods-ShoppingList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E8F68E0902C9CA99123368C65EABDEF /* Build configuration list for PBXNativeTarget "Pods-ShoppingList" */;
+			buildConfigurationList = 12686AA5E3FDB4F4C1AB91E5279A017D /* Build configuration list for PBXNativeTarget "Pods-ShoppingList" */;
 			buildPhases = (
-				42B33960F985C0714287F21A14C70318 /* Sources */,
-				7D11111DC1B8E8D07198C34E98AFC358 /* Frameworks */,
-				70097EF58C9B1CF13B17B1F0DD9DCF07 /* Headers */,
+				085DA6FE1E2386D9A0A9CF0577C2B754 /* Sources */,
+				CDA08843A5F260ACEC4C86F1E651F040 /* Frameworks */,
+				5D616E9F2C068732371812D86AE67A8D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8AC2098A2756A4245393A2A69581506F /* PBXTargetDependency */,
+				4DD9C60302D2E72168A0F787B1AC1ACC /* PBXTargetDependency */,
+				14FD7DF1977F925356FD8971C0C7F513 /* PBXTargetDependency */,
 			);
 			name = "Pods-ShoppingList";
 			productName = "Pods-ShoppingList";
-			productReference = 2043D96022EA1D3BF8BAA8AB8C9B15C5 /* Pods_ShoppingList.framework */;
+			productReference = 2AF3987B6D30B33268CF03DF838B0B7E /* Pods_ShoppingList.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		961DE7189B68AFE7A59D4ADA2A709444 /* Flurry-iOS-SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D4522F17F80B3681B0A59CE22B2DD2 /* Build configuration list for PBXNativeTarget "Flurry-iOS-SDK" */;
+			buildPhases = (
+				876ACD8FB7D51F8C4B368A445C4FAE3A /* Sources */,
+				3E1E9F94760257B148FA15A9593231A0 /* Frameworks */,
+				D30CE3B3ADE3942FEB292C2385E89A5E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flurry-iOS-SDK";
+			productName = "Flurry-iOS-SDK";
+			productReference = 77EFF58A73182B80F443CEE9C366BD86 /* Flurry_iOS_SDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -265,58 +475,114 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 96BC27019481D9A323BA2972304128BB /* Products */;
+			productRefGroup = 6D89B8CDC1FAEC5256239249803FFF66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A96B0822D16BD5860B52BB3386C271A8 /* Pods-ShoppingList */,
-				16EC19BC1FA15E1A5BC4EE3404E283AF /* SVProgressHUD */,
+				961DE7189B68AFE7A59D4ADA2A709444 /* Flurry-iOS-SDK */,
+				3A6409CA8B5546953EAAC5C1621105B4 /* Pods-ShoppingList */,
+				00FC0861B1BD8207050F1587724638CA /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		97E9513B958D9D9E0F4A086A9BEFC49F /* Resources */ = {
+		0AC9A847161D42C20DA7B3E013092421 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B46D99F8DAD57563F5F3313BCF760A /* SVProgressHUD.bundle in Resources */,
+				4D17427871B13016280F00FD47384A70 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		42B33960F985C0714287F21A14C70318 /* Sources */ = {
+		085DA6FE1E2386D9A0A9CF0577C2B754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA400E32D429332830A9B666A39C6CAF /* Pods-ShoppingList-dummy.m in Sources */,
+				3598AF4CD825BEAB3CB0ACD97166248E /* Pods-ShoppingList-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F06E1650400558C54315B747FD91E3B /* Sources */ = {
+		876ACD8FB7D51F8C4B368A445C4FAE3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93D55BF509D2B2193137D4564CB3AB34 /* SVIndefiniteAnimatedView.m in Sources */,
-				9609F5188A5894BCE96FA534A90AF6E6 /* SVProgressHUD-dummy.m in Sources */,
-				F92174F8776782172742FCA4C99B9E17 /* SVProgressHUD.m in Sources */,
+				F2626E62836B28935D95C2DE01D09B35 /* Flurry-iOS-SDK-dummy.m in Sources */,
+				EBA0C3D3A8E2FC89D4A0CD46E28FB20A /* FlurryAdsEmpty.m in Sources */,
+				24BE27D1D247713E9BCD4709E650D7A4 /* FlurryEmpty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF60ABDD7CEA0EC096214C9609DE060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFC97DB0F9B114A1A017C87B14C21A7 /* SVIndefiniteAnimatedView.m in Sources */,
+				938877243C6E131B716BB6BD75A9202C /* SVProgressHUD-dummy.m in Sources */,
+				20960F90FC40BE7ED7F4F3A37A96E9A0 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8AC2098A2756A4245393A2A69581506F /* PBXTargetDependency */ = {
+		14FD7DF1977F925356FD8971C0C7F513 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = 16EC19BC1FA15E1A5BC4EE3404E283AF /* SVProgressHUD */;
-			targetProxy = 3E612EAD3F3D3F6257B34FF2CF13B43F /* PBXContainerItemProxy */;
+			target = 00FC0861B1BD8207050F1587724638CA /* SVProgressHUD */;
+			targetProxy = 540E1CB9F78D2C8032C3A32C9031F919 /* PBXContainerItemProxy */;
+		};
+		4DD9C60302D2E72168A0F787B1AC1ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Flurry-iOS-SDK";
+			target = 961DE7189B68AFE7A59D4ADA2A709444 /* Flurry-iOS-SDK */;
+			targetProxy = 2854F4B19A77150869AA6B8960CE6A1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4DAB92E0D18138D8A1D6CAF28C70E551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076AA957CF5A61F9399DA45B1CB1776F /* Pods-ShoppingList.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingList/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingList/Pods-ShoppingList.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,44 +646,9 @@
 			};
 			name = Debug;
 		};
-		6E1239F149E8AD753DEC4330EB4D4B79 /* Debug */ = {
+		9377A633B6B94FB6D7CF22198AFA509A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A087ED5D0F85E2A404050DC37D6459 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9316A3833F48B5EBBE8E6D9477FEA9B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 076AA957CF5A61F9399DA45B1CB1776F /* Pods-ShoppingList.release.xcconfig */;
+			baseConfigurationReference = 65A1949658E3B111415E7DCF24A1099C /* Pods-ShoppingList.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -448,47 +679,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		A98EA1C5C8A3F2D685F80E8CB451835E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A087ED5D0F85E2A404050DC37D6459 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -548,12 +742,10 @@
 			};
 			name = Release;
 		};
-		FAC5B168603DA11512BA7C943B626EEB /* Debug */ = {
+		C336E97C3B58410FE86AD993A66F28CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65A1949658E3B111415E7DCF24A1099C /* Pods-ShoppingList.debug.xcconfig */;
+			baseConfigurationReference = 6180720B72D31958F224E3186F1A5660 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -563,23 +755,129 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ShoppingList/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShoppingList/Pods-ShoppingList.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5981555A67ED031498EF411DFBFBAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1059A1769EBF30D403B464702AFEFD17 /* Flurry-iOS-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Flurry-iOS-SDK/Flurry-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Flurry-iOS-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Flurry-iOS-SDK/Flurry-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Flurry_iOS_SDK;
+				PRODUCT_NAME = Flurry_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D20CE8B2DC306D14707EF08AE917409A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1059A1769EBF30D403B464702AFEFD17 /* Flurry-iOS-SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Flurry-iOS-SDK/Flurry-iOS-SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Flurry-iOS-SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Flurry-iOS-SDK/Flurry-iOS-SDK.modulemap";
+				PRODUCT_MODULE_NAME = Flurry_iOS_SDK;
+				PRODUCT_NAME = Flurry_iOS_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3F46ADCFB0616A10F7E907FE045C0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6180720B72D31958F224E3186F1A5660 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -589,6 +887,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12686AA5E3FDB4F4C1AB91E5279A017D /* Build configuration list for PBXNativeTarget "Pods-ShoppingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9377A633B6B94FB6D7CF22198AFA509A /* Debug */,
+				4DAB92E0D18138D8A1D6CAF28C70E551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -598,20 +905,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E8F68E0902C9CA99123368C65EABDEF /* Build configuration list for PBXNativeTarget "Pods-ShoppingList" */ = {
+		9B82031689E707DD3790617E7C1C35CE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAC5B168603DA11512BA7C943B626EEB /* Debug */,
-				9316A3833F48B5EBBE8E6D9477FEA9B5 /* Release */,
+				D3F46ADCFB0616A10F7E907FE045C0CC /* Debug */,
+				C336E97C3B58410FE86AD993A66F28CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90C292D09CC351263C99C101EB799246 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		F9D4522F17F80B3681B0A59CE22B2DD2 /* Build configuration list for PBXNativeTarget "Flurry-iOS-SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E1239F149E8AD753DEC4330EB4D4B79 /* Debug */,
-				A98EA1C5C8A3F2D685F80E8CB451835E /* Release */,
+				D20CE8B2DC306D14707EF08AE917409A /* Debug */,
+				C5981555A67ED031498EF411DFBFBAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
