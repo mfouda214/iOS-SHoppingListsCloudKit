@@ -9,6 +9,7 @@
 import UIKit
 import CloudKit
 import SVProgressHUD
+import Flurry_iOS_SDK
 
 class ListsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddListViewControllerDelegate {
     
@@ -17,6 +18,7 @@ class ListsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // MARK: Add List View Controller Delegate Methods
     func controller(controller: AddListViewController, didAddList list: CKRecord) {
+        
         // Add List to Lists
         lists.append(list)
         

@@ -9,6 +9,7 @@
 import UIKit
 import CloudKit
 import SVProgressHUD
+import Flurry_iOS_SDK
 
 protocol AddItemViewControllerDelegate {
     func controller(controller: AddItemViewController, didAddItem item: CKRecord)
@@ -82,6 +83,9 @@ class AddItemViewController: UIViewController {
                 self.processResponse(record: record, error: error as? NSError)
             }
         }
+        
+        let parameters = ["Item" : nameTextField.text]
+        Flurry.logEvent("Added-Item", withParameters: parameters)
     }
     
     

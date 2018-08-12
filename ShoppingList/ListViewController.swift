@@ -9,6 +9,7 @@
 import UIKit
 import CloudKit
 import SVProgressHUD
+import Flurry_iOS_SDK
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddItemViewControllerDelegate  {
     

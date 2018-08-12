@@ -9,6 +9,7 @@
 import UIKit
 import CloudKit
 import SVProgressHUD
+import Flurry_iOS_SDK
 
 protocol AddListViewControllerDelegate {
     func controller(controller: AddListViewController, didAddList list: CKRecord)
@@ -58,6 +59,9 @@ class AddListViewController: UIViewController {
             }
             
         }
+        
+        let parameters = ["List" : nameTextField.text]
+        Flurry.logEvent("Added-List", withParameters: parameters)
     }
     
     override func viewDidLoad() {
